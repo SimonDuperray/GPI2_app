@@ -55,9 +55,9 @@
 
             $login = $mysqli->real_escape_string($login);
             $pwd = $mysqli->real_escape_string($pwd);
-            $maRequete = "SELECT * FROM Utilisateur WHERE login = '".$login."' AND motDePasse = PASSWORD('".$pwd."');";
+            $request = "SELECT * FROM Utilisateur WHERE login = '".$login."' AND motDePasse = PASSWORD('".$pwd."');";
 
-            $result = $mysqli->query($maRequete);                  
+            $result = $mysqli->query($request);                  
             if(!$result) {
                 echo "Request error";
             } else {
