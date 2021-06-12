@@ -3,22 +3,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css" />
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
    <title>Connection-BaA</title>
-   <style>
-      #form-container {
-         background-color: lightblue;
-         border-radius: 10px;
-         padding: 20px;
-         position: absolute;
-         left: 50%;
-         top: 50%;
-         transform: translate(-50%, -50%);
-         width: 400px;
-         border: 1px solid black;
-         box-shadow: 4px 4px 4px grey;
-      }
-   </style>
 </head>
 <body>
    <div class="container" id="form-container">
