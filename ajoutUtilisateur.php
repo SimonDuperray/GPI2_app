@@ -89,15 +89,21 @@
                 </form>
                 <button class='btn btn-primary pd'>
                     <a class='link' href="menuAdministrateur.php">
-                        Back to menu
+                        Go Admin Panel
                     </a>
                 </button>
             </div>
         <?php
             } else {
                 echo "
-                <p> Vous n'êtes pas Administrateur </p> <br>
-                <a href=\"index.php\"> Page de connexion </a>
+                <div class='container container-div'>
+                    <p id='msg-err'>You're not admin</p>
+                    <div class='btn-container'>
+                        <button class='btn btn-primary'>
+                            <a class='link' href=\"index.php\">Log In</a>
+                        </button>
+                    </div>
+                </div>
                 ";
             }
         ?>

@@ -76,13 +76,16 @@
                     if($resultat["numUtilisateur"] == $ADMINID) {                                              
                         echo "
                             <button class='btn btn-danger'>
-                                <a class='link' href=\"menuAdministrateur.php\">Admin panel</a>
+                                <a class='link' href='menuAdministrateur.php'>Admin panel</a>
                             </button>
                         ";
                     }
                     echo "
                         <button class=' btn btn-primary'>
-                            <a class='link' href=\"listeConcours.php\">See Drawing Competition List</a>
+                            <a class='link' href='listeConcours.php'>See Drawing Competition List</a>
+                        </button>
+                        <button class='btn btn-danger'>
+                            <a class='link' href='logout.php'>Log out</a>
                         </button>
                         </div></div>
                     ";
@@ -92,7 +95,7 @@
                             <p id='msg-err'>Failed connection</p>
                             <div class='btn-container'>
                                 <button class='btn btn-primary'>
-                                    <a class='link' href=\"index.php\">Log In</a>
+                                    <a class='link' href='index.php'>Log In</a>
                                 </button>
                             </div>
                         </div>
@@ -103,8 +106,8 @@
             $mysqli->close();
         } else { 
             echo "
-                <p> Unknown user </p><br>
-                <a href=\"index.php\">Log In</a>
+                <p>Unknown user</p><br>
+                <a href='index.php'>Log In</a>
             ";
         }
         ?>
