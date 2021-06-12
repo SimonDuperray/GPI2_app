@@ -27,16 +27,33 @@
 
                 echo "
                     <div class='container container-div'>
-                        <ul>
+                        <h3 id='welcome'>Drawing competitions list</h3>
+                        <table id='compet-array'>
+                            <tr>
+                                <th>Numero</th>
+                                <th>Description</th>
+                                <th>State</th>
+                                <th>Link</th>
+                            </tr>
                 ";
                 while($row = mysqli_fetch_assoc($result)){
-                    echo "<li>".$row['numConcours']."-".$row['description']."</li>";
+                    echo "<tr>";
+                    echo "<td class='td-table-compet'>".$row['numConcours']."</td>";
+                    echo "<td class='td-table-compet'>".$row['description']."</td>";
+                    echo "<td class='td-table-compet'>".$row['etat']."</td>";
+                    echo "<td class='td-table-compet'>click me</td>";
+                    echo "</tr>";
                 }
-                echo "</ul>";
+                echo "</table>";
     
                 $mysqli->close();
                 
-                echo "<a href=\"menuAdministrateur.php\"> Back </a>";
+                echo "<div class='btn-container'>
+                        <button class='btn btn-primary'>    
+                            <a class='link' href=\"retourIndex.php\">Menu</a>
+                        </button>
+                    </div>    
+                ";
                 echo "</div>";
         
             } else {

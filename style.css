@@ -47,3 +47,10 @@
 .mgt {
    margin-top: 5px;
 }
+.td-table-compet {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+#compet-array {
+   margin-bottom: 10px;
+}
